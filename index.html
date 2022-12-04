@@ -3,295 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CS-WAY INICIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Inventario WAY</title>
     <link rel="icon" type="text/css" href="img/LOGO.png">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="css/articulos.css">
-    <link rel="stylesheet" href="css/modal_tipo_usuario.css">
-
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
-    <!--Header - menu-->
-    <header>
+    <main>
 
-        <div class="header-content">
-
-            <div class="logo">
-                <h1>CS-<b>WAY</b></h1>
-            </div>
-
-            <div class="menu" id="show-menu">
-
-                <nav>
-                    <ul>
-                        <li><a href="galeria.html"> <i class="fab fa-address-card"> </i>Galería</a></li>
-                        <li><a href="blog.html"> <i class="fas fa-book-open"></i> Catálogo</a></li>
-                        <li class="menu-selected"><a href="#" class="text-menu-selected">
-                                <i class="fas fa-user"></i>Ingresar Usuario</a></li>
-
-                    </ul>
-                </nav>
-
-            </div>
-
-        </div>
-
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-
-    </header>
-
-
-    <section class="modal">
-        <div class="modal__container">
-            <img src="img/LOGO.png" class="modal__img">
-            <h2 class="modal__title">¡BIENVENIDO A CS-WAY!</h2>
-            <form class="formulario">
-                <h1>SELECCIONA TU ROL</h1>
-                <marquee scrollamount="12" direction="right">
-                    <a><img class="gif_hamburguesa" src="img/gif_hamburguesa.gif" type=""></a>
-                </marquee>
-                <div class="contenedores">
-            </form>
-            <!--selección-->
-            <form class="formulario_modal_rol" name="formulario2">
-                <select class="select_form_modal" name="sitios" required>
-                    <option class="option_form_modal" value="login_inventario.html">INVENTARIO</option>
-                    <option class="option_form_modal" value="login_proveedor.html">PROVEEDOR</option>
-                    <option class="option_form_modal" value="login_domiciliario.html">DOMICILIARIO</option>
-                    <option class="option_form_modal" value="login_cliente.html">CLIENTE</option>
-                </select>
-                <br>
-                <br>
-                <br>
-                <input type="submit" onclick="window.open(formulario2.sitios.value);" value="INGRESAR"
-                    class="button_ingrear_rol">
-
-            </form>
-            <p class="modal__paragraph">Ingresa tu tipo de usuario (ROL) dentro del sistema CS-WAY... Si no tienes
-                puedes registrarte seleccionando el tipo de ROL y completar el formulario de registro...</p>
-            <a href="login_inventario.html" class="modal__close">Cerrar Modal</a>
-        </div>
-    </section>
-
-    <!--Portada-->
-
-    <div class="container-all" id="move-content">
-
-
-        <div class="slider">
-            <ul>
-                <li>
-                    <img src="img/portada1way.png" >
-                </li>
-                <li>
-                    <img src="img/portada2way.png">
-                </li>
-                <li>
-                    <img src="img/portada3way.png">
-                </li>
-            </ul>
-        </div>
-
-        <!--BARRA DE REDES SOCIALES-->
-
-        <div class="container-bar">
-            <input type="checkbox" id="btn-social">
-            <label for="btn-social" class="fa fa-play"></label>
-            <div class="icon-social">
-                <a href="https://www.facebook.com/carlitosWayCo" class="fa fa-facebook">
-                    <span id="title">Facebook</span>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=573118589582&app=facebook&entry_point=page_cta&fbclid=IwAR2QhKluSwOd7SPl7_0GKtZ14HQAdAEK5CwqRWwfRpkLVfB-oCyg7YqCc8c"
-                    class="fa fa-whatsapp">
-                    <span id="title">Whatsapp</span>
-                </a>
-                <a href="https://www.instagram.com/carlitosway.foodart/?hl=es-la" class="fa fa-instagram">
-                    <span id="title">Instagram</span>
-                </a>
-            </div>
-        </div>
-
-        <!--ARTICULO-->
-
-        <div class="container-content">
-            <article>
-
-                <h1>MISIÓN Y VISIÓN</h1>
-
-                <p>Misión
-                    “Brindar alimentos de alta calidad en un ambiente familiar y cálido.”
-                </p>
-                <p> Visión
-                    “Ser una empresa líder en el servicio de comida rápida a nivel nacional, manteniendo altos
-                    estándares de calidad a nuestros clientes, cuidando el talento humano y relación con proveedores.”
-                </p>
-            </article>
-        </div>
-        <div class="container-content">
-            <br>
-            <br>
-            <article>
-                <h1>PRESENTACIÓN</h1>
-                <p>Nuestro proyecto comienza en el año
-                    2015, cuando su creador Carlos Franco
-                    decide formar su propia empresa, todo
-                    nace del amor y la pasión que tenemos
-                    por llevar comida real, elaborada
-                    artesanalmente para nuestros clientes,
-                    con la mejor calidad, servicio y precios.
-                    Siempre deseando satisfacer hasta los
-                    paladares mas exigentes</p>
-                <br>
-                <video src="video/presentacion_video.mp4" autoplay loop muted></video>
-            </article>
-        </div>
-        <div class="container-content">
-            <article>
-                <h1>ESPECIALIDADES</h1>
-                <div class="container__slider">
-
-                    <div class="container">
-                        <input type="radio" name="slider" id="item-1" checked>
-                        <input type="radio" name="slider" id="item-2">
-                        <input type="radio" name="slider" id="item-3">
-
-                        <div class="cards">
-                            <label class="card" for="item-1" id="selector-1">
-                                <img src="img/Portada.jpg">
-                            </label>
-                            <label class="card" for="item-2" id="selector-2">
-                                <img src="img/Portada-Hamburguesas.jpg">
-                            </label>
-                            <label class="card" for="item-3" id="selector-3">
-                                <img src="img/Portada-Perros-calientes.jpg">
-                        </div>
-                    </div>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
 
                 </div>
-
-                
-            </article>
-        </div>
-
-        <div class="container-content">
-            <br>
-            <br>
-            <article>
-                <h1>NOVEDADES</h1>
-                <p>Las ultimas noticias de CARLITO'S WAY</p>
-                <div class="carrusel">
-                    <div class="carrusel-item">
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 1.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 2.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 3.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 4.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 5.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 6.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 7.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 8.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 9.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 10.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 11.jpg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 12.jpeg" alt="">
-                        </div>
-                        <div class="carrusel-items">
-                            <img src="img/carrusel_img/imagen 13.jpg" alt="">
-                        </div>
+                <div class="caja__trasera-register">
+                    <canvas id="canvas" width="1400" height="600"></canvas>
+                    <h3>INTRUCCIONES DE INGRESO</h3>
+                    <p">El usuario es tu número de celular... y la contraseña...ehhh...en el tarrito que te regale
+                        destras del papel que cubre los titulos esta la contraseña:3</p>
+                </div>
             </div>
-             </div>
-            </article>
-        </div>
 
-        
-    </div>
-    <br>
-    <!--Boton de ir hacia arriba-->
-    <div id="button-up">
-        <i class="fas fa-chevron-up"></i>
-    </div>
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="inicio.html" name="f1valido" class="formulario__login">
 
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <h2>DESARROLLADO POR:</h2>
-                <figure>
-                    <a href="error500.html">
-                        <img src="img/logogaes2.jpeg" alt="Logo de GAES 2">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>CONTACTANOS </h2>
-                <form action="">
-                    <div class="form">
-                        <h1>FORMULARIO</h1>
-                        <div class="grupo">
-                            <input type="text" name="" id="" required><span class="barra"></span>
-                            <label>Nombre</label>
-                        </div>
-                        <div class="grupo">
-                            <input type="email" name="" id="" required><span class="barra"></span>
-                            <label>Email</label>
-                        </div>
-                        <div class="grupo">
-                            <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
-                            <label>Mensaje</label>
-                        </div>
-                        <button type="submit">ENVIAR</button>
+                    <h2>BIENVENIDA A TU PAGINA WEB KRISTELL</h2>
+                    <h2></h2>
+                    <input type="text" maxlength="45" name="usuario" id="usuario" placeholder="Usuario...">
+                    <input type="password" maxlength="45" name="contraseña" id="contraseña" placeholder="Contraseña...">
+                    <br>
+                    <br>
+                    <label><h4 style="text-align: center;">NOTA ESPECIAL:</h4></label>
+                    <br>
+                    <textarea readonly
+                    style="width:100%;height: 60px; text-align: center; overflow: hidden;">Espero te guste mucho mi amor...fue con mucho cariño...y bueno hay muchos secretos detras de esta pagina espero los encuentres...</textarea>
+                    <input type="button" value="INGRESAR" id="submit" onclick="validate()"/>
+                    <div class="boton">
+                        <input type="reset" class="botonC" onclick="saludo()">
+                    
+                    
+                    <script>
+                    
+                    function saludo(){
+                            window.confirm('Esta seguro de limpiar el formulario, los datos seran borrados');
+                    }
+                        
+                    </script>
+                    
+                     
+                    
+                        
                     </div>
-                </form>
+             
             </div>
-            <div class="box">
-                <h2>¿DONDE ESTAMOS?</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3977.215447208938!2d-74.11178858480918!3d4.555229244169078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1646375335726!5m2!1ses-419!2sco"></iframe>
-            </div>
-            <br>
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2022 <b>GAES 2</b> - Todos los Derechos Reservados.</small>
-        </div>
-    </footer>
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bloque_sotfware_click_derecho.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/modal_tipo_usuario.js"></script>
-    <script src="js/carrusel.js"></script>
+    </main>
 
+    <script src="js/login.js"></script>
 </body>
 
 </html>
