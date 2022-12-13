@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Domiciliario WAY</title>
+    <link rel="icon" type="text/css" href="img/LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/login_inventario.css">
+</head>
+<body>
+
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>INICIAR SESIÓN</h2>
+                        <h2>DOMICILIARIO </h2>
+                        <input type="text" maxlength="45" name="usuario" id="usuario" placeholder="Usuario">
+                        <input type="password" maxlength="45" name="contraseña" id="contraseña" placeholder="Contraseña">
+                        <input type="datetime-local" required placeholder="Ingresa fecha y hora">
+                        <br>
+                    <br>
+                    <label><h4 style="text-align: center;">TERMINOS Y CONDICIONES</h4></label>
+                    <br>
+                    <textarea readonly
+                    style="width:100%;height: 60px; text-align: center; overflow: hidden;">En el momento de ingresar como domiciliario se recomienda salir por salida segura para la seguridad del software...</textarea>
+                    <input type="button" value="ENTRAR" id="submit" onclick="validate()"/>
+                    <div class="boton">
+                        <input type="reset" class="botonC" onclick="saludo()">
+                    
+                    
+                    <script>
+                    
+                    function saludo(){
+                            window.confirm('Esta seguro de limpiar el formulario, los datos seran borrados');
+                    }
+                        
+                    </script>
+                    
+                     
+                    
+                        
+                    </div>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>REGÍSTRARSE</h2>
+                        <input type="text" name="primer_nombre" id="primer_nombre" maxlength="45" placeholder="Primer Nombre">
+                        <input type="text" name="segundo_nombre" id="segundo_nombre" maxlength="45"  placeholder="Segundo Nombre">
+                        <input type="text" name="primer_apellido" id="primer_apellido" maxlength="45" placeholder="Primer Apellido">
+                        <input type="text" name="segundo_apellido" id="segundo_apellido" maxlength="45" placeholder="Segundo Apellido">
+                        <input type="text" name="tipo_identificacion" id="tipo_identificacion" maxlength="45" placeholder="Tipo de Identificación">
+                        <input type="number" name="numero_identificacion" id="numero_identificacion" maxlength="10" placeholder="Numero de Identificación">
+                        <input type="text" name="direccion" id="direccion" maxlength="45" placeholder="Dirección">
+                        <input type="tel" name="telefono" id="telefono" maxlength="10" placeholder="Telefono">
+                        <input type="text" name="correo" id="correo" maxlength="45" placeholder="Correo Electronico">
+                        <input type="text" name="crear_usuario" id="crear_usuario" maxlength="45" placeholder="Crear Usuario">
+                        <input type="password" name="crear_contraseña" id="crear_contraseña" maxlength="45"  placeholder="Crear Contraseña">
+                        <input type="password" name="confirmar_contraseña" id="confirmar_contraseña" maxlength="45" placeholder="Confirmar Contraseña">
+                        <input type="button" value="REGÍSTRARSE" id="register1" onclick="validate2()"/>
+                        <div class="boton">
+                            <input type="reset" class="botonC" onclick="saludo()">
+                        
+                        
+                        <script>
+                        
+                        function saludo(){
+                                window.confirm('Esta seguro de limpiar el formulario, los datos seran borrados');
+                        }
+                            
+                        </script>
+                        
+                         
+                        
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="js/login_inventario.js"></script>
+        <script src="js/register_login_domiciliario.js"></script>
+</body>
+</html>
